@@ -28,10 +28,15 @@ header {
     right: 0;
     padding-top: 3px;
     border-radius: 0px;
+    height: 45px;
 }
 
 .navbar-toggle { 
     color: #222;
+    height: 45px;
+    padding: 0px;
+    padding-right: 20px;
+    margin: 0px;
 }
 
 /* update this */
@@ -44,12 +49,17 @@ header {
     background-color: transparent;
 }
 
-.navbar.affix { 
+.navbar.affix, .navbar.affix .navbar-collapse.in, .navbar.affix .navbar-collapse.collapsing { 
     background-color: #e7e7e7;
 }
 
+.navbar.affix .navbar-collapse.in, .navbar.affix .navbar-collapse.collapsing {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
 .nav>li>a { 
-    font-size: 15px;
+    font-size: 13px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -59,12 +69,12 @@ header {
 /*    font-size: 13px;*/
     padding: 10px;
 }
-
-.navbar-collapse ul { 
-    float: right;
+.navbar-collapse.in ul, .navbar-collapse.collapsing ul{ 
+    padding-left: 32px;
 }
 
-
-.navbar-collapse.in ul, .navbar-collapse.collapsing ul{ 
-    text-align: right;
+.navbar.affix-top .navbar-collapse.in, .navbar.affix-top .navbar-collapse.collapsing { 
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
 }
