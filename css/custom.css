@@ -1,3 +1,24 @@
+body { 
+    font-family: 'Hind Vadodara', sans-serif;
+    color: #121818;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h4 { 
+    letter-spacing: 6px;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: lighter;
+}
+
+.textContainer { 
+    margin-top: 30px;
+}
+
 header { 
     position: fixed;
     top: 0;
@@ -12,7 +33,7 @@ header {
 .allContent { 
     width: 50%;
     float: right;
-    padding: 40px;
+    padding: 60px;
     height: 100%;
     margin-top: 50px;
 }
@@ -28,6 +49,13 @@ header {
     padding-top: 3px;
     border-radius: 0px;
     height: 45px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+#myNavbar { 
+    padding: 0px 40px;
+    
 }
 
 .navbar-toggle { 
@@ -44,29 +72,31 @@ header {
 }
 
 .nav>li>a:focus, .nav>li>a:hover, .navbar-toggle:hover { 
-    color: forestgreen;
+    color: #5e787b;
     background-color: transparent;
 }
 
 .navbar.affix, .navbar.affix .navbar-collapse.in, .navbar.affix .navbar-collapse.collapsing { 
-    background-color: #e7e7e7;
+    background-color: #CBD2D2;
 }
 
 .navbar.affix .navbar-collapse.in, .navbar.affix .navbar-collapse.collapsing {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid #8C9C9E;
+    border-bottom: 1px solid #8C9C9E;
 }
 
 .nav>li>a { 
-    font-size: 13px;
+    font-size: 16px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+    padding-left: 5px;
+    padding-top: 10px;
 }
 
 .navbar.affix .nav>li>a { 
-/*    font-size: 13px;*/
-    padding: 10px;
+    font-size: 14px;
+    padding-left: 3px;
 }
 .navbar-collapse.in ul, .navbar-collapse.collapsing ul{ 
     padding-left: 30px;
@@ -92,7 +122,7 @@ header {
     }
 }
 
-@media only screen and (max-width : 900px){
+@media only screen and (max-width : 950px){
     header { 
         width: 40%;
     }
