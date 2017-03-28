@@ -17,7 +17,6 @@ header {
     margin-top: 50px;
 }
 
-
 /* ------------ navbar ------------- */
 
 .navbar { 
@@ -70,11 +69,86 @@ header {
     padding: 10px;
 }
 .navbar-collapse.in ul, .navbar-collapse.collapsing ul{ 
-    padding-left: 32px;
+    padding-left: 30px;
+}
+
+.navbar.affix .navbar-collapse.in .nav>li>a, .navbar.affix .navbar-collapse.collapsing .nav>li>a{ 
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .navbar.affix-top .navbar-collapse.in, .navbar.affix-top .navbar-collapse.collapsing { 
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     background-color: white;
+}
+
+/* ------------ Media queries ------------- */
+
+/* Desktops and laptops */
+@media only screen and (min-width : 1224px) {
+    header, .allContent, .navbar { 
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 900px){
+    header { 
+        width: 40%;
+    }
+    
+    .allContent, .navbar { 
+        width: 60%;
+    }
+}
+ 
+/* Large screens */
+@media only screen and (min-width : 1824px) {
+    header, .allContent, .navbar { 
+        width: 50%;
+    }    
+}
+ 
+/* Tablets (landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+     header { 
+        width: 40%;
+    }
+    
+    .allContent, .navbar {
+        width: 60%;
+    }
+}
+ 
+/* Tablets (portrait) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+     header { 
+        width: 40%;
+    }
+    
+    .allContent, .navbar {
+        width: 60%;
+    }
+}
+ 
+/* Smartphones (landscape) */
+@media only screen and (min-width : 321px) and (max-width : 768px) {
+    header { 
+        display:none;
+    }
+    
+    .allContent, .navbar { 
+        width: 100%;
+    }
+}
+ 
+/* Smartphones (portrait) */
+@media only screen and (max-width : 375px) {
+    header { 
+        display:none;
+    }
+    
+    .allContent, .navbar { 
+        width: 100%;
+    }
 }
