@@ -15,6 +15,19 @@ h4 {
     font-weight: lighter;
 }
 
+a, a:link, a:visited, a:active { 
+    color: #389ca7;
+}
+
+::selection {
+    background: #c1d9e8; /* WebKit/Blink Browsers */
+    color: #2E3C5C;
+}
+::-moz-selection {
+    background: #c1d9e8; /* Gecko Browsers */
+    color: #2E3C5C;
+}
+
 .textContainer { 
     margin-top: 30px;
 }
@@ -28,6 +41,10 @@ header {
     display: block;
     background-position: 50% 0;
     width: 50%; 
+}
+
+.contactLinks i { 
+    padding-right: 10px;
 }
 
 .allContent { 
@@ -59,19 +76,18 @@ header {
 }
 
 .navbar-toggle { 
-    color: #222;
+    color: #121818;
     height: 45px;
     padding: 0px;
     padding-right: 20px;
     margin: 0px;
 }
 
-/* update this */
-.navbar a:link, .navbar a:active, .navbar a:visited { 
-    color: #222;
+.navbar a:link, .navbar a:active, .navbar a:visited, .contactLinks a:link, .contactLinks a:active, .contactLinks a:visited  { 
+    color: #121818;
 }
 
-.nav>li>a:focus, .nav>li>a:hover, .navbar-toggle:hover { 
+.nav>li>a:focus, .nav>li>a:hover, .navbar-toggle:hover, .contactLinks a:hover { 
     color: #5e787b;
     background-color: transparent;
 }
