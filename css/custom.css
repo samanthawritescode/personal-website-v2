@@ -1,18 +1,24 @@
+/* Global styling */
+
 body { 
     font-family: 'Hind Vadodara', sans-serif;
     color: #121818;
 }
 
-h1 {
+.section-heading {
     font-family: 'Playfair Display', serif;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-h4 { 
+.about-subheading, .section-subheading, section h3.section-subheading { 
     letter-spacing: 6px;
     font-family: 'Hind Vadodara', sans-serif;
     font-weight: lighter;
+}
+
+.section-subheading, section h3.section-subheading {
+    letter-spacing: normal;
 }
 
 a, a:link, a:visited, a:active { 
@@ -28,25 +34,6 @@ a, a:link, a:visited, a:active {
     color: #2E3C5C;
 }
 
-.textContainer { 
-    margin-top: 30px;
-}
-
-header { 
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background-size: cover;
-    display: block;
-    background-position: 50% 0;
-    width: 50%; 
-}
-
-.contactLinks i { 
-    padding-right: 10px;
-}
-
 .allContent { 
     width: 50%;
     float: right;
@@ -58,6 +45,7 @@ header {
 /* ------------ navbar ------------- */
 
 .navbar { 
+    z-index: 9999999; /* make sure it's above everything else on the page */ 
     position: fixed;
     background-color: #fff;
     width: 50%;
@@ -71,8 +59,7 @@ header {
 }
 
 #myNavbar { 
-    padding: 0px 40px;
-    
+    padding: 0px 40px;   
 }
 
 .navbar-toggle { 
@@ -127,6 +114,74 @@ header {
     border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     background-color: white;
+}
+
+/* -------- Big image --------- */
+header { 
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-size: cover;
+    display: block;
+    background-position: 50% 0;
+    width: 50%; 
+}
+
+/* -------- About section -------- */
+.contactLinks i { 
+    padding-right: 10px;
+}
+
+
+.textContainer { 
+    margin-top: 30px;
+}
+
+/* -------- Experience Section ------- */ 
+
+#experience { 
+    margin: 0px;
+    padding: 0px;
+    margin-top: 50vh; /* could be better, but works for now */ 
+    padding-top: 15px;
+}
+
+#experience .container { 
+    width: 100%;
+}
+
+.timeline > li .timeline-panel, .timeline > li.timeline-inverted > .timeline-panel  { 
+    padding: 0px;
+}
+
+.timeline > li .timeline-panel { 
+    padding-right: 60px;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel { 
+    padding-left: 60px;
+}
+
+.timeline-heading > h5 { 
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: lighter;
+}
+
+.timeline-heading > h4 { 
+    font-family: 'Playfair Display', serif;
+}
+
+/* -------- Projects Section ------- */ 
+
+#projects .container { 
+    width: 100%;
+}
+
+/* -------- Footer Section ------- */ 
+
+footer { 
+    text-align: left;
 }
 
 /* ------------ Media queries ------------- */
